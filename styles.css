@@ -31,6 +31,7 @@ body {
 
 .hero {
   position: relative;
+  overflow: hidden;
   min-height: clamp(430px, 82vh, 680px);
   display: grid;
   align-items: center;
@@ -133,6 +134,7 @@ h1 {
 }
 
 .spark {
+  z-index: 2;
   color: #fff7a8;
   font-family: "Fredoka", Arial, sans-serif;
   font-size: clamp(2.2rem, 6vw, 5rem);
@@ -415,12 +417,27 @@ h1 {
 
 @media (max-width: 560px) {
   .hero {
-    min-height: 560px;
+    min-height: 640px;
     padding: 28px 20px;
   }
 
+  .hero-kicker {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 8px;
+    color: #fff36d;
+    background: rgba(71, 52, 95, 0.22);
+    text-shadow: 0 2px 0 rgba(71, 52, 95, 0.28);
+  }
+
+  .hero-copy {
+    max-width: 280px;
+    font-size: 1.16rem;
+    text-shadow: 0 3px 0 rgba(71, 52, 95, 0.18);
+  }
+
   h1 {
-    font-size: clamp(3.4rem, 23vw, 6.5rem);
+    font-size: clamp(3.3rem, 20vw, 5.4rem);
   }
 
   .cloud-one,
@@ -428,10 +445,23 @@ h1 {
     display: none;
   }
 
+  .spark-one {
+    top: 78px;
+    left: 18px;
+  }
+
+  .spark-two {
+    right: 22px;
+    bottom: 165px;
+  }
+
   .banner-image {
-    top: 270px;
-    right: -18vw;
-    width: min(92vw, 360px);
+    top: 132px;
+    right: -140px;
+    bottom: auto;
+    width: min(104vw, 390px);
+    opacity: 0.58;
+    transform: rotate(-7deg);
   }
 
   .character-grid {
