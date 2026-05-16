@@ -337,12 +337,28 @@ h1 {
   background: linear-gradient(180deg, #fff 0%, #ffe1e1 100%);
 }
 
+.yatta {
+  background: linear-gradient(180deg, #fff 0%, #ffe1e1 100%);
+}
+
 .shelly .avatar {
   background: #d5a9ff;
 }
 
 .sprout .avatar {
   background: #ff7676;
+}
+
+.yatta .avatar {
+  width: 152px;
+  height: 230px;
+  aspect-ratio: auto;
+  border-radius: 50%;
+  background: #ff7676;
+}
+
+.yatta .avatar img {
+  border-radius: 0;
 }
 
 .stories-section {
